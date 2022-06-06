@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<time.h>
+delay()
+{
+    int i;
+    for(i=8000;i>0;i--);
+}
+int gcd(int a,int b){
+if(b!=0)
+    return gcd(b,a%b);
+else return a;
+}
+void main(){
+int m,n,ans;
+time_t start,end;
+start=time(NULL);
+printf("enter two numbers");
+scanf("%d %d", &m,&n);
+//delay();
+ans=gcd(m,n);
+printf("%d",ans);
+end=time(NULL);
+printf("\n time taken:%f", difftime(end,start));
+}
