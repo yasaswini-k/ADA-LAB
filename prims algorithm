@@ -1,11 +1,11 @@
 #include<stdio.h>
-
+#include<conio.h>
 void prims();
 int c[10][10],n;
 void main()
 {
  int i,j;
-
+clrscr();
  printf("\nenter the no. of vertices:\t");
  scanf("%d",&n);
  printf("\nenter the cost matrix:\n");
@@ -17,7 +17,7 @@ void main()
   }
  }
  prims();
-
+getch();
 }
 
 void prims()
