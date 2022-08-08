@@ -55,7 +55,7 @@ void knapsack()
   printf("\n\n");
  }
  printf("\nthe optimal solution is %d",v[n][m]);
- printf("\nthe solution vector is:\n");
+ printf("\nthe objects used are:\n");
  for(i=n;i>=1;i--)
  {
   if(v[i][m]!=v[i-1][m])
@@ -69,8 +69,10 @@ void knapsack()
   }
  }
  for(i=1;i<=n;i++)
- {
-  printf("%d\t",x[i]);
+ { 
+ if(x[i]==1)
+
+  printf("%d\t",i);
  }
 }
 
