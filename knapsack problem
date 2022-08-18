@@ -26,6 +26,7 @@ void main()
 
 void knapsack()
 {
+    int count=0;
  int x[10];
  for(i=0;i<=n;i++)
  {
@@ -71,9 +72,12 @@ void knapsack()
  for(i=1;i<=n;i++)
  { 
  if(x[i]==1)
-
+ {
+count++;
   printf("%d\t",i);
+ } 
  }
+ printf("\n no.og objects used are:%d", count);
 }
 
 int max(int x,int y)
